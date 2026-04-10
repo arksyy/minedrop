@@ -30,8 +30,94 @@
       <h2>Présentation</h2>
       <div class="card rounded-4 bg-light">
         <div class="card-body">
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+            <div class="col-12">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">Sommaire</h5>
+                  <div class="row mt-2 g-2">
+                    <div class="col-12">
+                      <div class="card">
+                        <div class="card-body">
+                          <h6 class="card-title">Fonctionnement</h6>
+                          <p class="mb-0">Jeu d'hasard qui utilise des détecteurs de mouvements pour alimenter un
+                            jeu sur une interface web. Le joueur aura à utiliser ses mouvements pour utiliser le jeu et
+                            se faire des crédits. Le but de ce jeu est de miner des colonnes pour se rendre au coffre.
+                            Le coffre contient un multiplicateur pour multiplier la mise comme le jeu sur stake.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="card">
+                        <div class="card-body pb-0">
+                          <h6 class="card-title">Réponse aux défis et contraintes</h6>
+                          <ul class="mb-0">
+                            <li>
+                              Le détecteur de mouvement doit bien reconnaître les mouvements pour donner des points
+                              spécifiques pour
+                              des différents mouvements. Pour ce faire, on doit faire en sorte que le système
+                              reconnaissent les mouvements en étant très précis.
+                            </li>
+                            <li>
+                              Les pioches et les matériaux sont déterminés au hasard.
+                            </li>
+                            <li>
+                              Lorsqu'il n'existe plus de blocs dans la colonne, le coffre s'ouvre quand le jeu finit.
+                              Lorsqu'il n'existe plus de blocs dans
+                              la colonne, il ne doit plus avoir de pioches disponible.
+
+                            </li>
+                          </ul>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="card">
+                        <div class="card-body">
+                          <h6 class="card-title">Interactions attendues</h6>
+                          <ul class="card-text mb-0">
+                            <li>Amorce : le joueur se place devant la borne et met sa mise en crédits pour démarrer la partie.</li>
+                            <li>Déroulement : le joueur fait des mouvements devant la caméra pour recevoir des crédits afin de miner les colonnes. Les pioches et les matériaux sont déterminés au hasard. Quand il reste plus de colonnes, le coffre s'ouvre avec un multiplicateur.</li>
+                            <li>Temps : une partie dure plus ou moins une minute selon la chance du joueur avec les pioches.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="card h-100">
+                        <div class="card-body">
+                          <h6 class="card-title">Schématisation matérielle</h6>
+                          <div class="text-center"><img src="img/minedrop_materielle.png" class="img-fluid mt-2" alt="Schématisation matérielle Mine Drop" /></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="card h-100">
+                        <div class="card-body">
+                          <h6 class="card-title">Schématisation logicielle</h6>
+                          <div class="text-center"><img src="img/minedrop_logicielle.png" class="img-fluid mt-2" alt="Schématisation logicielle Mine Drop" /></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="card">
+                        <div class="card-body">
+                          <h6 class="card-title">Justification des technologies</h6>
+                          <ul class="mb-0">
+                            <li>OpenCV : utlisé pour capturer le flux vidéo de la webcam.</li>
+                            <li>MediaPipe : permet de détecter les poses corporelles en temps réel.</li>
+                            <li>Python : notre langage principal côté serveur, car c'est le langage où OpenCV et MediaPipe sont le mieux intégrés.</li>
+                            <li>React : nous permet de créer une interface web réactive qui se met à jour en temps réel selon les mouvements du joueur.</li>
+                            <li>TailwindCSS : framework CSS utilitaire qui va rendre l'interface plus belle.</li>
+                            <li>Raspberry Pi : petit ordinateur compact, suffisamment puissant pour le traitement vidéo.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
     </section>
@@ -48,15 +134,12 @@
           <h4>Webcam eMeet C960</h4>
           <div class="card-text">
             <p>Fabricant : Emeet</p>
-            <p>Modèle : C690</p>
+            <p>Modèle : C960</p>
             <p><a href="https://emeet.com/en-ca/products/webcam-c960?_pos=5&_sid=63b46cd14&_ss=r&variant=40815889481899">Fiche du produit</a></p>
-            <p>Nous comptons utiliser cette technologie pour filmer les mouvements que la personne fera pour lui
-              donner des crédits en fonction du mouvements reçus.
+            <p>Nous comptons utiliser cette technologie pour filmer les mouvements que la personne fera pour lui donner des crédits en fonction des mouvements reçus.
             </p>
-            <p>Nous utilisons une webcam, car il n'y a pas d'autre moyens d'utiliser une caméra pour faire
-              l'Expérimentations avec une bonne défintions
-              pour bien capter les mouvements
-            <p>Cette technologie sera Expérimenté par Adam</p>
+            <p>Nous utilisons une webcam, car il n'y a pas d'autres moyens d'utiliser une caméra pour faire l'expérimentation avec une bonne définition pour bien capter les mouvements.</p>
+            <p>Cette technologie sera expérimentée par Adam.</p>
           </div>
 
         </div>
