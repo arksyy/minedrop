@@ -39,7 +39,7 @@
                       <div class="card">
                         <div class="card-body">
                           <h6 class="card-title">Fonctionnement</h6>
-                          <p class="mb-0">MineDrop est un jeu d'hasard qui utilise des détecteurs de mouvements pour alimenter un
+                          <p class="mb-0">MineDrop est un jeu de hasard qui utilise des détecteurs de mouvements pour alimenter un
                             jeu sur une interface web. Le joueur aura à utiliser ses mouvements pour utiliser le jeu et
                             se faire des crédits qui serviront de monnaie pour jouer. Le but de ce jeu est de miner des colonnes pour se rendre au coffre.
                             Le coffre contient un multiplicateur pour multiplier la mise comme le jeu sur Stake.</p>
@@ -104,7 +104,7 @@
                         <div class="card-body">
                           <h6 class="card-title">Justification des technologies</h6>
                           <ul class="mb-0">
-                            <li>OpenCV : utlisé pour capturer le flux vidéo de la webcam.</li>
+                            <li>OpenCV : utilisé pour capturer le flux vidéo de la webcam.</li>
                             <li>MediaPipe : permet de détecter les poses corporelles en temps réel.</li>
                             <li>Python : notre langage principal côté serveur, car c'est le langage où OpenCV et MediaPipe sont le mieux intégrés.</li>
                             <li>React : nous permet de créer une interface web réactive qui se met à jour en temps réel selon les mouvements du joueur.</li>
@@ -126,45 +126,48 @@
       <h2>Matériel</h2>
       <div class="card rounded-4 bg-light">
         <div class="card-body">
-          <h3>Liste du matériel</h3>
-          <ul>
-            <li>Webcam eMeet C960</li>
-            <li>Canakit Raspberry Pi 4 Revision 4.0</li>
-          </ul>
-          <h4>Webcam eMeet C960</h4>
-          <div class="card-text">
-            <p>Fabricant : Emeet</p>
-            <p>Modèle : C960</p>
-            <p><a href="https://emeet.com/en-ca/products/webcam-c960?_pos=5&_sid=63b46cd14&_ss=r&variant=40815889481899">Fiche du produit</a></p>
-            <p>Nous comptons utiliser cette technologie pour capturer les mouvements que la personne fera pour lui donner des crédits en fonction des mouvements reçus.
-            </p>
-            <p>Nous utilisons une webcam, car il n'y a pas d'autres moyens d'utiliser une caméra pour faire l'expérimentation avec une bonne définition pour bien capter les mouvements.</p>
-            <p>Cette technologie sera expérimentée par Adam.</p>
-          </div>
+          <div class="col-12">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Liste du matériel</h5>
+                <div class="row mt-2 g-3">
 
-          <h4>CanaKit Raspberry Pi 4 Starter Kit</h4>
-          <div class="card-text">
-            <p>Fabricant : Raspberry Pi Ltd</p>
-            <p>Modèle : Raspberry Pi 4 Model B</p>
-            <p><a href="https://www.canakit.com/raspberry-pi-4-starter-kit.html">Fiche du produit</a></p>
-            <p>Le Raspberry Pi sert principalement à héberger notre jeu et connecter les périphériques nécessaires au fonctionnement du 
-              jeu: webcam, écran, clavier et souris.
-            </p>
-            <ul>
-              <li>
-                Coût abordable: Le Raspberry Pi est une solution très économique comparé à un ordinateur. Sa puissance est amplement suffisante
-                pour notre utilisation
-              </li>
-              <li>
-                Compact: Son format compact est idéal pour une installation fixe ou bien pour le déplacement.
-              </li>
-              <li>
-                Compatible avec Linux: Son système d'exploitation est idéal pour les librairies utilisées pour le projet comme OpenCV
-              </li>
-            </ul>
-            <p>Cette technologie sera expérimentée par Anthony.</p>
-          </div>
+                  <div class="col-md-6">
+                    <div class="card h-100">
+                      <div class="card-body">
+                        <h6 class="card-title">Webcam eMeet C960</h6>
+                        <p class="mb-1"><span class="text-muted">Fabricant :</span> Emeet</p>
+                        <p class="mb-1"><span class="text-muted">Modèle :</span> C960</p>
+                        <p class="mb-2"><a href="https://emeet.com/en-ca/products/webcam-c960?_pos=5&_sid=63b46cd14&_ss=r&variant=40815889481899">Fiche du produit</a></p>
+                        <p class="mb-1">Nous comptons utiliser cette technologie pour capturer les mouvements que la personne fera pour lui donner des crédits en fonction des mouvements reçus.</p>
+                        <p class="mb-1">Nous utilisons une webcam, car il n'y a pas d'autres moyens d'utiliser une caméra pour faire l'expérimentation avec une bonne définition pour bien capter les mouvements.</p>
+                        <p class="mb-0 text-muted fst-italic">Expérimentée par Adam.</p>
+                      </div>
+                    </div>
+                  </div>
 
+                  <div class="col-md-6">
+                    <div class="card h-100">
+                      <div class="card-body">
+                        <h6 class="card-title">CanaKit Raspberry Pi 4 Starter Kit</h6>
+                        <p class="mb-1"><span class="text-muted">Fabricant :</span> Raspberry Pi Ltd</p>
+                        <p class="mb-1"><span class="text-muted">Modèle :</span> Raspberry Pi 4 Model B</p>
+                        <p class="mb-2"><a href="https://www.canakit.com/raspberry-pi-4-starter-kit.html">Fiche du produit</a></p>
+                        <p class="mb-1">Le Raspberry Pi sert principalement à héberger notre jeu et connecter les périphériques nécessaires au fonctionnement du jeu : webcam, écran, clavier et souris.</p>
+                        <ul class="mb-2">
+                          <li>Coût abordable : solution très économique comparé à un ordinateur, avec une puissance amplement suffisante.</li>
+                          <li>Compact : format idéal pour une installation fixe ou le déplacement.</li>
+                          <li>Compatible avec Linux : idéal pour les librairies utilisées comme OpenCV.</li>
+                        </ul>
+                        <p class="mb-0 text-muted fst-italic">Expérimentée par Anthony.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -173,8 +176,103 @@
       <h2>Expérimentations</h2>
       <div class="card rounded-4 bg-light">
         <div class="card-body">
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          <div class="col-12">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">CanaKit Raspberry Pi 4 Starter Kit</h5>
+                <h6 class="text-muted mb-3">Tests des périphériques</h6>
+                <p>La première étape était de tester les périphériques nécessaires à notre jeu (clavier, souris, webcam). En installant
+                  la librairie usbutils, on peut afficher les périphériques connectés.
+                </p>
+                <div class="row g-3">
+
+                  <div class="col-md-6">
+                    <div class="card border-primary h-100">
+                      <div class="card-body">
+                        <h6 class="card-title">Étape 1 — Installation de usbutils</h6>
+                        <img src="img/veille-1.jpg" alt="Installation de usbutils" class="img-experimentation rounded" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="card border-primary h-100">
+                      <div class="card-body">
+                        <h6 class="card-title">Étape 2 — Affichage des périphériques</h6>
+                        <img src="img/veille-2.jpg" alt="Affichage des périphériques connectés" class="img-experimentation rounded" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <p class="mb-0">Le clavier et la souris fonctionnaient directement au lancement. Par contre, même si le Raspberry Pi reconnaît la webcam, il
+                          fallait installer une librairie supplémentaire pour tester son fonctionnement.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="card border-primary h-100">
+                      <div class="card-body">
+                        <h6 class="card-title">Étape 3 — Installation de fswebcam</h6>
+                        <p class="card-text small text-muted">fswebcam permet de tester la webcam et de télécharger la photo dans les dossiers.</p>
+                        <img src="img/veille-3.jpg" alt="Installation de fswebcam" class="img-experimentation rounded" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="card border-primary h-100">
+                      <div class="card-body">
+                        <h6 class="card-title">Étape 4 — Commande pour prendre la photo</h6>
+                        <img src="img/veille-4.jpg" alt="Commande pour prendre la photo avec fswebcam" class="img-experimentation rounded" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 mx-auto">
+                    <div class="card border-primary h-100">
+                      <div class="card-body">
+                        <h6 class="card-title">Étape 5 — Image capturée</h6>
+                        <img src="img/veille-5.jpg" alt="Image capturée par la webcam" class="img-experimentation rounded" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <p class="mb-0">Le dernier test était d'ajouter un programme et de le lancer, car le Raspberry Pi sert uniquement au lancement du jeu et non au développement.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="card border-primary h-100">
+                      <div class="card-body">
+                        <h6 class="card-title">Étape 6 — Ajout du programme</h6>
+                        <img src="img/veille-6.jpg" class="img-experimentation rounded" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="card border-primary h-100">
+                      <div class="card-body">
+                        <h6 class="card-title">Étape 7 — Lancement du programme</h6>
+                        <img src="img/veille-7.jpg"class="img-experimentation rounded" />
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
