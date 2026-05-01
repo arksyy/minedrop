@@ -1,180 +1,172 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <title>MineDrop</title>
-    <link rel="stylesheet" href="bootstrap.css" />
-  </head>
 
-  <body>
-    <div class="container mt-3">
-      <ul class="nav nav-pills bg-primary rounded-4 p-1 py-3">
-        <li class="nav-item">
-          <a class="nav-link text-white fw-bold" href="#">MineDrop</a>
-        </li>
-        <li class="nav-item ms-auto">
-          <a class="nav-link text-white" href="#presentation">Présentation</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#materiel">Matériel</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#experimentations"
-            >Expérimentations</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#montage">Montage</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#logiciel">Logiciel</a>
-        </li>
-      </ul>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <title>MineDrop</title>
+  <link rel="stylesheet" href="bootstrap.css" />
+</head>
 
-    <div class="container mt-4">
-      <section id="presentation" class="mb-5">
-        <h2>Présentation</h2>
-        <div class="card rounded-4 bg-light">
-          <div class="card-body">
-            <div class="col-12">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Sommaire</h5>
-                  <div class="row mt-2 g-2">
-                    <div class="col-12">
-                      <div class="card">
-                        <div class="card-body">
-                          <h6 class="card-title">Fonctionnement</h6>
-                          <p class="mb-0">
-                            MineDrop est un jeu de hasard qui utilise des
-                            détecteurs de mouvements pour alimenter un jeu sur
-                            une interface web. Le joueur aura à utiliser ses
-                            mouvements pour utiliser le jeu et se faire des
-                            crédits qui serviront de monnaie pour jouer. Le but
-                            de ce jeu est de miner des colonnes pour se rendre
-                            au coffre. Le coffre contient un multiplicateur pour
-                            multiplier la mise comme le jeu sur Stake.
-                          </p>
+<body>
+  <div class="container mt-3">
+    <ul class="nav nav-pills bg-primary rounded-4 p-1 py-3">
+      <li class="nav-item">
+        <a class="nav-link text-white fw-bold" href="#">MineDrop</a>
+      </li>
+      <li class="nav-item ms-auto">
+        <a class="nav-link text-white" href="#presentation">Présentation</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#materiel">Matériel</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#experimentations">Expérimentations</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#montage">Montage</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#logiciel">Logiciel</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container mt-4">
+    <section id="presentation" class="mb-5">
+      <h2>Présentation</h2>
+      <div class="card rounded-4 bg-light">
+        <div class="card-body">
+          <div class="col-12">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Sommaire</h5>
+                <div class="row mt-2 g-2">
+                  <div class="col-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <h6 class="card-title">Fonctionnement</h6>
+                        <p class="mb-0">
+                          MineDrop est un jeu de hasard qui utilise des
+                          détecteurs de mouvements pour alimenter un jeu sur
+                          une interface web. Le joueur aura à utiliser ses
+                          mouvements pour utiliser le jeu et se faire des
+                          crédits qui serviront de monnaie pour jouer. Le but
+                          de ce jeu est de miner des colonnes pour se rendre
+                          au coffre. Le coffre contient un multiplicateur pour
+                          multiplier la mise comme le jeu sur Stake.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <h6 class="card-title">
+                          Réponse aux défis et contraintes
+                        </h6>
+                        <ul class="mb-0">
+                          <li>
+                            Le détecteur de mouvement doit bien reconnaître
+                            les mouvements pour donner des points spécifiques
+                            pour différents mouvements. Pour ce faire, on doit
+                            faire en sorte que le système reconnaisse les
+                            mouvements en étant très précis.
+                          </li>
+                          <li>
+                            Les pioches et les matériaux sont déterminés au
+                            hasard.
+                          </li>
+                          <li>
+                            Lorsqu'il n'existe plus de blocs dans la colonne,
+                            le coffre s'ouvre quand le jeu finit. Lorsqu'il
+                            n'existe plus de blocs dans la colonne, il ne doit
+                            plus y avoir de pioches disponibles.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <h6 class="card-title">Interactions attendues</h6>
+                        <ul class="card-text mb-0">
+                          <li>
+                            Amorce : le joueur se place devant la borne et met
+                            sa mise en crédits pour démarrer la partie.
+                          </li>
+                          <li>
+                            Déroulement : le joueur fait des mouvements devant
+                            la caméra pour recevoir des crédits afin de miner
+                            les colonnes. Les pioches et les matériaux sont
+                            déterminés au hasard. Quand il ne reste plus de
+                            colonnes, le coffre s'ouvre avec un
+                            multiplicateur.
+                          </li>
+                          <li>
+                            Temps : une partie dure plus ou moins une minute
+                            selon la chance du joueur avec les pioches.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="card h-100">
+                      <div class="card-body">
+                        <h6 class="card-title">Schématisation matérielle</h6>
+                        <div class="text-center">
+                          <img src="img/minedrop_materielle.png" class="img-fluid mt-2"
+                            alt="Schématisation matérielle Mine Drop" />
                         </div>
                       </div>
                     </div>
-                    <div class="col-12">
-                      <div class="card">
-                        <div class="card-body">
-                          <h6 class="card-title">
-                            Réponse aux défis et contraintes
-                          </h6>
-                          <ul class="mb-0">
-                            <li>
-                              Le détecteur de mouvement doit bien reconnaître
-                              les mouvements pour donner des points spécifiques
-                              pour différents mouvements. Pour ce faire, on doit
-                              faire en sorte que le système reconnaisse les
-                              mouvements en étant très précis.
-                            </li>
-                            <li>
-                              Les pioches et les matériaux sont déterminés au
-                              hasard.
-                            </li>
-                            <li>
-                              Lorsqu'il n'existe plus de blocs dans la colonne,
-                              le coffre s'ouvre quand le jeu finit. Lorsqu'il
-                              n'existe plus de blocs dans la colonne, il ne doit
-                              plus y avoir de pioches disponibles.
-                            </li>
-                          </ul>
+                  </div>
+                  <div class="col-6">
+                    <div class="card h-100">
+                      <div class="card-body">
+                        <h6 class="card-title">Schématisation logicielle</h6>
+                        <div class="text-center">
+                          <img src="img/minedrop_logicielle.png" class="img-fluid mt-2"
+                            alt="Schématisation logicielle Mine Drop" />
                         </div>
                       </div>
                     </div>
-                    <div class="col-12">
-                      <div class="card">
-                        <div class="card-body">
-                          <h6 class="card-title">Interactions attendues</h6>
-                          <ul class="card-text mb-0">
-                            <li>
-                              Amorce : le joueur se place devant la borne et met
-                              sa mise en crédits pour démarrer la partie.
-                            </li>
-                            <li>
-                              Déroulement : le joueur fait des mouvements devant
-                              la caméra pour recevoir des crédits afin de miner
-                              les colonnes. Les pioches et les matériaux sont
-                              déterminés au hasard. Quand il ne reste plus de
-                              colonnes, le coffre s'ouvre avec un
-                              multiplicateur.
-                            </li>
-                            <li>
-                              Temps : une partie dure plus ou moins une minute
-                              selon la chance du joueur avec les pioches.
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-6">
-                      <div class="card h-100">
-                        <div class="card-body">
-                          <h6 class="card-title">Schématisation matérielle</h6>
-                          <div class="text-center">
-                            <img
-                              src="img/minedrop_materielle.png"
-                              class="img-fluid mt-2"
-                              alt="Schématisation matérielle Mine Drop"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-6">
-                      <div class="card h-100">
-                        <div class="card-body">
-                          <h6 class="card-title">Schématisation logicielle</h6>
-                          <div class="text-center">
-                            <img
-                              src="img/minedrop_logicielle.png"
-                              class="img-fluid mt-2"
-                              alt="Schématisation logicielle Mine Drop"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="card">
-                        <div class="card-body">
-                          <h6 class="card-title">
-                            Justification des technologies
-                          </h6>
-                          <ul class="mb-0">
-                            <li>
-                              OpenCV : utilisé pour capturer le flux vidéo de la
-                              webcam.
-                            </li>
-                            <li>
-                              MediaPipe : permet de détecter les poses
-                              corporelles en temps réel.
-                            </li>
-                            <li>
-                              Python : notre langage principal côté serveur, car
-                              c'est le langage où OpenCV et MediaPipe sont le
-                              mieux intégrés.
-                            </li>
-                            <li>
-                              React : nous permet de créer une interface web
-                              réactive qui se met à jour en temps réel selon les
-                              mouvements du joueur.
-                            </li>
-                            <li>
-                              TailwindCSS : framework CSS utilitaire qui va
-                              rendre l'interface plus belle.
-                            </li>
-                            <li>
-                              Raspberry Pi : petit ordinateur compact,
-                              suffisamment puissant pour le traitement vidéo.
-                            </li>
-                          </ul>
-                        </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <h6 class="card-title">
+                          Justification des technologies
+                        </h6>
+                        <ul class="mb-0">
+                          <li>
+                            OpenCV : utilisé pour capturer le flux vidéo de la
+                            webcam.
+                          </li>
+                          <li>
+                            MediaPipe : permet de détecter les poses
+                            corporelles en temps réel.
+                          </li>
+                          <li>
+                            Python : notre langage principal côté serveur, car
+                            c'est le langage où OpenCV et MediaPipe sont le
+                            mieux intégrés.
+                          </li>
+                          <li>
+                            React : nous permet de créer une interface web
+                            réactive qui se met à jour en temps réel selon les
+                            mouvements du joueur.
+                          </li>
+                          <li>
+                            TailwindCSS : framework CSS utilitaire qui va
+                            rendre l'interface plus belle.
+                          </li>
+                          <li>
+                            Raspberry Pi : petit ordinateur compact,
+                            suffisamment puissant pour le traitement vidéo.
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -183,483 +175,472 @@
             </div>
           </div>
         </div>
-      </section>
-
-      <section id="materiel" class="mb-5">
-        <h2>Matériel</h2>
-        <div class="card rounded-4 bg-light">
-          <div class="card-body">
-            <div class="col-12">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Liste du matériel</h5>
-                  <div class="row mt-2 g-3">
-                    <div class="col-md-6">
-                      <div class="card h-100">
-                        <div class="card-body">
-                          <h6 class="card-title">Webcam eMeet C960</h6>
-                          <p class="mb-1">
-                            <span class="text-muted">Fabricant :</span> Emeet
-                          </p>
-                          <p class="mb-1">
-                            <span class="text-muted">Modèle :</span> C960
-                          </p>
-                          <p class="mb-2">
-                            <a
-                              href="https://emeet.com/en-ca/products/webcam-c960?_pos=5&_sid=63b46cd14&_ss=r&variant=40815889481899"
-                              >Fiche du produit</a
-                            >
-                          </p>
-                          <p class="mb-1">
-                            Nous comptons utiliser cette technologie pour
-                            capturer les mouvements que la personne fera pour
-                            lui donner des crédits en fonction des mouvements
-                            reçus.
-                          </p>
-                          <p class="mb-1">
-                            Nous utilisons une webcam, car il n'y a pas d'autres
-                            moyens d'utiliser une caméra pour faire
-                            l'expérimentation avec une bonne définition pour
-                            bien capter les mouvements.
-                          </p>
-                          <p class="mb-0 text-muted fst-italic">
-                            Expérimentée par Adam.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <div class="card h-100">
-                        <div class="card-body">
-                          <h6 class="card-title">
-                            CanaKit Raspberry Pi 4 Starter Kit
-                          </h6>
-                          <p class="mb-1">
-                            <span class="text-muted">Fabricant :</span>
-                            Raspberry Pi Ltd
-                          </p>
-                          <p class="mb-1">
-                            <span class="text-muted">Modèle :</span> Raspberry
-                            Pi 4 Model B
-                          </p>
-                          <p class="mb-2">
-                            <a
-                              href="https://www.canakit.com/raspberry-pi-4-starter-kit.html"
-                              >Fiche du produit</a
-                            >
-                          </p>
-                          <p class="mb-1">
-                            Le Raspberry Pi sert principalement à héberger notre
-                            jeu et connecter les périphériques nécessaires au
-                            fonctionnement du jeu : webcam, écran, clavier et
-                            souris.
-                          </p>
-                          <ul class="mb-2">
-                            <li>
-                              Coût abordable : solution très économique comparé
-                              à un ordinateur, avec une puissance amplement
-                              suffisante.
-                            </li>
-                            <li>
-                              Compact : format idéal pour une installation fixe
-                              ou le déplacement.
-                            </li>
-                            <li>
-                              Compatible avec Linux : idéal pour les librairies
-                              utilisées comme OpenCV.
-                            </li>
-                          </ul>
-                          <p class="mb-0 text-muted fst-italic">
-                            Expérimentée par Anthony.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="experimentations" class="mb-5">
-        <h2>Expérimentations</h2>
-        <div class="card rounded-4 bg-light">
-          <div class="card-body">
-            <div class="col-12">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">CanaKit Raspberry Pi 4 Starter Kit</h5>
-                  <h6 class="text-muted mb-1">Tests des périphériques</h6>
-                  <p class="text-muted fst-italic mb-3">
-                    Réalisée par Anthony
-                  </p>
-                  <p>
-                    La première étape était de tester les périphériques
-                    nécessaires à notre jeu (clavier, souris, webcam). En
-                    installant la librairie usbutils, on peut afficher les
-                    périphériques connectés.
-                  </p>
-                  <div class="row g-3">
-                    <div class="col-md-6">
-                      <div class="card border-primary h-100">
-                        <div class="card-body">
-                          <h6 class="card-title">
-                            Étape 1 — Installation de usbutils
-                          </h6>
-                          <img
-                            src="img/raspberry-1.jpg"
-                            alt="Installation de usbutils"
-                            class="img-experimentation rounded"
-                          />
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <div class="card border-primary h-100">
-                        <div class="card-body">
-                          <h6 class="card-title">
-                            Étape 2 — Affichage des périphériques
-                          </h6>
-                          <img
-                            src="img/raspberry-2.jpg"
-                            alt="Affichage des périphériques connectés"
-                            class="img-experimentation rounded"
-                          />
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-12">
-                      <div class="card">
-                        <div class="card-body">
-                          <p class="mb-0">
-                            Le clavier et la souris fonctionnaient directement
-                            au lancement. Par contre, même si le Raspberry Pi
-                            reconnaît la webcam, il fallait installer une
-                            librairie supplémentaire pour tester son
-                            fonctionnement.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <div class="card border-primary h-100">
-                        <div class="card-body">
-                          <h6 class="card-title">
-                            Étape 3 — Installation de fswebcam
-                          </h6>
-                          <p class="card-text small text-muted">
-                            fswebcam permet de tester la webcam et de
-                            télécharger la photo dans les dossiers.
-                          </p>
-                          <img
-                            src="img/raspberry-3.jpg"
-                            alt="Installation de fswebcam"
-                            class="img-experimentation rounded"
-                          />
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <div class="card border-primary h-100">
-                        <div class="card-body">
-                          <h6 class="card-title">
-                            Étape 4 — Commande pour prendre la photo
-                          </h6>
-                          <img
-                            src="img/raspberry-4.jpg"
-                            alt="Commande pour prendre la photo avec fswebcam"
-                            class="img-experimentation rounded"
-                          />
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6 mx-auto">
-                      <div class="card border-primary h-100">
-                        <div class="card-body">
-                          <h6 class="card-title">Étape 5 — Image capturée</h6>
-                          <img
-                            src="img/raspberry-5.jpg"
-                            alt="Image capturée par la webcam"
-                            class="img-experimentation rounded"
-                          />
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-12">
-                      <div class="card">
-                        <div class="card-body">
-                          <p class="mb-0">
-                            Le dernier test était d'ajouter un programme et de
-                            le lancer, car le Raspberry Pi sert uniquement au
-                            lancement du jeu et non au développement.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <div class="card border-primary h-100">
-                        <div class="card-body">
-                          <h6 class="card-title">
-                            Étape 6 — Ajout du programme
-                          </h6>
-                          <img
-                            src="img/raspberry-6.jpg"
-                            alt="Ajout du programme sur le Raspberry Pi"
-                            class="img-experimentation rounded"
-                          />
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <div class="card border-primary h-100">
-                        <div class="card-body">
-                          <h6 class="card-title">
-                            Étape 7 — Lancement du programme
-                          </h6>
-                          <img
-                            src="img/raspberry-7.jpg"
-                            alt="Lancement du programme sur le Raspberry Pi"
-                            class="img-experimentation rounded"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 mt-3">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Webcam + OpenCV + MediaPipe</h5>
-                  <h6 class="text-muted mb-1">
-                    Capture vidéo et détection de mouvements
-                  </h6>
-                  <p class="text-muted fst-italic mb-3">
-                    Réalisée par Adam Auger
-                  </p>
-                  <p>Liste des expérimentations nécessaires :</p>
-                  <ul>
-                    <li>
-                      Expérimentation 1 : Capture du flux vidéo de la webcam
-                    </li>
-                    <li>Expérimentation 2 : Détection des poses corporelles</li>
-                    <li>Expérimentation 3 : Détection des mouvements</li>
-                  </ul>
-                  <div class="row g-3">
-                    <div class="col-md-6">
-                      <div class="card border-primary h-100">
-                        <div class="card-body">
-                          <h6 class="card-title">
-                            Expérimentation 1 — Capture du flux vidéo
-                          </h6>
-                          <p class="text-muted small mb-2">Webcam + OpenCV</p>
-                          <p class="mb-2">
-                            Le but de cette première expérimentation est de voir
-                            le flux de la webcam et de l'afficher dans une
-                            fenêtre en utilisant OpenCV. Le contexte de
-                            réalisation est un petit script Python qui permet de
-                            capturer le flux vidéo de la webcam et de l'afficher
-                            dans une fenêtre.
-                          </p>
-                          <video
-                            src="media/test1_webcam.mp4"
-                            controls
-                            class="w-100 rounded mb-2"
-                          ></video>
-                          <p class="mb-1">
-                            <strong>Résultat :</strong> Très bien, le flux est
-                            amplement assez bon pour pouvoir utiliser la webcam.
-                          </p>
-                          <p class="mb-0">
-                            <strong>Avis :</strong> Une webcam va être amplement
-                            suffisante pour la résolution dont on a besoin pour
-                            le projet, et OpenCV fonctionne très bien pour gérer
-                            son flux.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <div class="card border-primary h-100">
-                        <div class="card-body">
-                          <h6 class="card-title">
-                            Expérimentation 2 — Détection des poses corporelles
-                          </h6>
-                          <p class="text-muted small mb-2">
-                            Webcam + MediaPipe
-                          </p>
-                          <p class="mb-2">
-                            Le but de cette deuxième expérimentation est de
-                            détecter les poses corporelles en utilisant
-                            MediaPipe. Le contexte de réalisation est un petit
-                            script Python qui permet de détecter les poses
-                            corporelles en utilisant MediaPipe.
-                          </p>
-                          <video
-                            src="media/test2_mediapipe.mp4"
-                            controls
-                            class="w-100 rounded mb-2"
-                          ></video>
-                          <p class="mb-1">
-                            <strong>Résultat :</strong> On est capable de bien
-                            voir mes membres et les points suivent mes
-                            mouvements.
-                          </p>
-                          <p class="mb-0">
-                            <strong>Avis :</strong> MediaPipe fonctionne très
-                            bien pour détecter les mouvements du corps et les
-                            points suivent mes mouvements.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6 mx-auto">
-                      <div class="card border-primary h-100">
-                        <div class="card-body">
-                          <h6 class="card-title">
-                            Expérimentation 3 — Détection des mouvements
-                          </h6>
-                          <p class="text-muted small mb-2">
-                            Webcam + OpenCV + MediaPipe
-                          </p>
-                          <p class="mb-2">
-                            Le but de cette troisième expérimentation est de
-                            détecter les mouvements en utilisant OpenCV et
-                            MediaPipe. Le contexte de réalisation est un petit
-                            script Python qui permet de détecter les mouvements
-                            en utilisant OpenCV et MediaPipe.
-                          </p>
-                          <video
-                            src="media/test3_opencv_mediapipe.mp4"
-                            controls
-                            class="w-100 rounded mb-2"
-                          ></video>
-                          <p class="mb-1">
-                            <strong>Résultat :</strong> On est capable de bien
-                            voir mes mouvements quand je fais la danse de miner.
-                          </p>
-                          <p class="mb-0">
-                            <strong>Avis :</strong> OpenCV et MediaPipe
-                            fonctionnent très bien pour détecter les mouvements
-                            et les points suivent mes mouvements même quand je
-                            fais des mouvements bizarres.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-12">
-                      <div class="card">
-                        <div class="card-body">
-                          <p class="mb-0">
-                            <strong>Avis final :</strong> Les deux technologies
-                            vont amplement faire l'affaire pour notre projet.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="montage" class="mb-5">
-        <h2>Montage</h2>
-        <div class="card rounded-4 bg-light">
-          <div class="card-body">
-            <div class="row g-3">
-              <div class="col-12">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h5 class="card-title">Liste des technos impliquées</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      Ordre et instructions pour le montage
-                    </h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h5 class="card-title">Photos du montage</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="logiciel" class="mb-3">
-        <h2>Logiciel</h2>
-        <div class="card rounded-4 bg-light">
-          <div class="card-body">
-            <div class="row g-3">
-              <div class="col-12">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h5 class="card-title">Stack technologique</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      Justification du choix des technos
-                    </h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      Captures d'écran des étapes d'utilisation
-                    </h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <footer class="container mb-3">
-      <div class="bg-dark text-white py-4 rounded-3 text-center">
-        <p class="mb-2 opacity-75">
-          Veille technologique - TP3 - Cégep Garneau
-        </p>
-        <span class="fs-6"
-          >Alexandre Roy - Félix Laliberté - Anthony Pageau - Léo Paquin - Adam
-          Auger</span
-        >
       </div>
-    </footer>
-  </body>
+    </section>
+
+    <section id="materiel" class="mb-5">
+      <h2>Matériel</h2>
+      <div class="card rounded-4 bg-light">
+        <div class="card-body">
+          <div class="col-12">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Liste du matériel</h5>
+                <div class="row mt-2 g-3">
+                  <div class="col-md-6">
+                    <div class="card h-100">
+                      <div class="card-body">
+                        <h6 class="card-title">Webcam eMeet C960</h6>
+                        <p class="mb-1">
+                          <span class="text-muted">Fabricant :</span> Emeet
+                        </p>
+                        <p class="mb-1">
+                          <span class="text-muted">Modèle :</span> C960
+                        </p>
+                        <p class="mb-2">
+                          <a
+                            href="https://emeet.com/en-ca/products/webcam-c960?_pos=5&_sid=63b46cd14&_ss=r&variant=40815889481899">Fiche
+                            du produit</a>
+                        </p>
+                        <p class="mb-1">
+                          Nous comptons utiliser cette technologie pour
+                          capturer les mouvements que la personne fera pour
+                          lui donner des crédits en fonction des mouvements
+                          reçus.
+                        </p>
+                        <p class="mb-1">
+                          Nous utilisons une webcam, car il n'y a pas d'autres
+                          moyens d'utiliser une caméra pour faire
+                          l'expérimentation avec une bonne définition pour
+                          bien capter les mouvements.
+                        </p>
+                        <p class="mb-0 text-muted fst-italic">
+                          Expérimentée par Adam.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="card h-100">
+                      <div class="card-body">
+                        <h6 class="card-title">
+                          CanaKit Raspberry Pi 4 Starter Kit
+                        </h6>
+                        <p class="mb-1">
+                          <span class="text-muted">Fabricant :</span>
+                          Raspberry Pi Ltd
+                        </p>
+                        <p class="mb-1">
+                          <span class="text-muted">Modèle :</span> Raspberry
+                          Pi 4 Model B
+                        </p>
+                        <p class="mb-2">
+                          <a href="https://www.canakit.com/raspberry-pi-4-starter-kit.html">Fiche du produit</a>
+                        </p>
+                        <p class="mb-1">
+                          Le Raspberry Pi sert principalement à héberger notre
+                          jeu et connecter les périphériques nécessaires au
+                          fonctionnement du jeu : webcam, écran, clavier et
+                          souris.
+                        </p>
+                        <ul class="mb-2">
+                          <li>
+                            Coût abordable : solution très économique comparé
+                            à un ordinateur, avec une puissance amplement
+                            suffisante.
+                          </li>
+                          <li>
+                            Compact : format idéal pour une installation fixe
+                            ou le déplacement.
+                          </li>
+                          <li>
+                            Compatible avec Linux : idéal pour les librairies
+                            utilisées comme OpenCV.
+                          </li>
+                        </ul>
+                        <p class="mb-0 text-muted fst-italic">
+                          Expérimentée par Anthony.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experimentations" class="mb-5">
+      <h2>Expérimentations</h2>
+      <div class="card rounded-4 bg-light">
+        <div class="card-body">
+          <div class="col-12">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">CanaKit Raspberry Pi 4 Starter Kit</h5>
+                <h6 class="text-muted mb-1">Tests des périphériques</h6>
+                <p class="text-muted fst-italic mb-3">
+                  Réalisée par Anthony
+                </p>
+                <p>
+                  La première étape était de tester les périphériques
+                  nécessaires à notre jeu (clavier, souris, webcam). En
+                  installant la librairie usbutils, on peut afficher les
+                  périphériques connectés.
+                </p>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="card border-primary h-100">
+                      <div class="card-body">
+                        <h6 class="card-title">
+                          Étape 1 — Installation de usbutils
+                        </h6>
+                        <img src="img/raspberry-1.jpg" alt="Installation de usbutils"
+                          class="img-experimentation rounded" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="card border-primary h-100">
+                      <div class="card-body">
+                        <h6 class="card-title">
+                          Étape 2 — Affichage des périphériques
+                        </h6>
+                        <img src="img/raspberry-2.jpg" alt="Affichage des périphériques connectés"
+                          class="img-experimentation rounded" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <p class="mb-0">
+                          Le clavier et la souris fonctionnaient directement
+                          au lancement. Par contre, même si le Raspberry Pi
+                          reconnaît la webcam, il fallait installer une
+                          librairie supplémentaire pour tester son
+                          fonctionnement.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="card border-primary h-100">
+                      <div class="card-body">
+                        <h6 class="card-title">
+                          Étape 3 — Installation de fswebcam
+                        </h6>
+                        <p class="card-text small text-muted">
+                          fswebcam permet de tester la webcam et de
+                          télécharger la photo dans les dossiers.
+                        </p>
+                        <img src="img/raspberry-3.jpg" alt="Installation de fswebcam"
+                          class="img-experimentation rounded" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="card border-primary h-100">
+                      <div class="card-body">
+                        <h6 class="card-title">
+                          Étape 4 — Commande pour prendre la photo
+                        </h6>
+                        <img src="img/raspberry-4.jpg" alt="Commande pour prendre la photo avec fswebcam"
+                          class="img-experimentation rounded" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 mx-auto">
+                    <div class="card border-primary h-100">
+                      <div class="card-body">
+                        <h6 class="card-title">Étape 5 — Image capturée</h6>
+                        <img src="img/raspberry-5.jpg" alt="Image capturée par la webcam"
+                          class="img-experimentation rounded" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <p class="mb-0">
+                          Le dernier test était d'ajouter un programme et de
+                          le lancer, car le Raspberry Pi sert uniquement au
+                          lancement du jeu et non au développement.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="card border-primary h-100">
+                      <div class="card-body">
+                        <h6 class="card-title">
+                          Étape 6 — Ajout du programme
+                        </h6>
+                        <img src="img/raspberry-6.jpg" alt="Ajout du programme sur le Raspberry Pi"
+                          class="img-experimentation rounded" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="card border-primary h-100">
+                      <div class="card-body">
+                        <h6 class="card-title">
+                          Étape 7 — Lancement du programme
+                        </h6>
+                        <img src="img/raspberry-7.jpg" alt="Lancement du programme sur le Raspberry Pi"
+                          class="img-experimentation rounded" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 mt-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Webcam + OpenCV + MediaPipe</h5>
+                <h6 class="text-muted mb-1">
+                  Capture vidéo et détection de mouvements
+                </h6>
+                <p class="text-muted fst-italic mb-3">
+                  Réalisée par Adam Auger
+                </p>
+                <p>Liste des expérimentations nécessaires :</p>
+                <ul>
+                  <li>
+                    Expérimentation 1 : Capture du flux vidéo de la webcam
+                  </li>
+                  <li>Expérimentation 2 : Détection des poses corporelles</li>
+                  <li>Expérimentation 3 : Détection des mouvements</li>
+                </ul>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="card border-primary h-100">
+                      <div class="card-body">
+                        <h6 class="card-title">
+                          Expérimentation 1 — Capture du flux vidéo
+                        </h6>
+                        <p class="text-muted small mb-2">Webcam + OpenCV</p>
+                        <p class="mb-2">
+                          Le but de cette première expérimentation est de voir
+                          le flux de la webcam et de l'afficher dans une
+                          fenêtre en utilisant OpenCV. Le contexte de
+                          réalisation est un petit script Python qui permet de
+                          capturer le flux vidéo de la webcam et de l'afficher
+                          dans une fenêtre.
+                        </p>
+                        <video src="media/test1_webcam.mp4" controls class="w-100 rounded mb-2"></video>
+                        <p class="mb-1">
+                          <strong>Résultat :</strong> Très bien, le flux est
+                          amplement assez bon pour pouvoir utiliser la webcam.
+                        </p>
+                        <p class="mb-0">
+                          <strong>Avis :</strong> Une webcam va être amplement
+                          suffisante pour la résolution dont on a besoin pour
+                          le projet, et OpenCV fonctionne très bien pour gérer
+                          son flux.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="card border-primary h-100">
+                      <div class="card-body">
+                        <h6 class="card-title">
+                          Expérimentation 2 — Détection des poses corporelles
+                        </h6>
+                        <p class="text-muted small mb-2">
+                          Webcam + MediaPipe
+                        </p>
+                        <p class="mb-2">
+                          Le but de cette deuxième expérimentation est de
+                          détecter les poses corporelles en utilisant
+                          MediaPipe. Le contexte de réalisation est un petit
+                          script Python qui permet de détecter les poses
+                          corporelles en utilisant MediaPipe.
+                        </p>
+                        <video src="media/test2_mediapipe.mp4" controls class="w-100 rounded mb-2"></video>
+                        <p class="mb-1">
+                          <strong>Résultat :</strong> On est capable de bien
+                          voir mes membres et les points suivent mes
+                          mouvements.
+                        </p>
+                        <p class="mb-0">
+                          <strong>Avis :</strong> MediaPipe fonctionne très
+                          bien pour détecter les mouvements du corps et les
+                          points suivent mes mouvements.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 mx-auto">
+                    <div class="card border-primary h-100">
+                      <div class="card-body">
+                        <h6 class="card-title">
+                          Expérimentation 3 — Détection des mouvements
+                        </h6>
+                        <p class="text-muted small mb-2">
+                          Webcam + OpenCV + MediaPipe
+                        </p>
+                        <p class="mb-2">
+                          Le but de cette troisième expérimentation est de
+                          détecter les mouvements en utilisant OpenCV et
+                          MediaPipe. Le contexte de réalisation est un petit
+                          script Python qui permet de détecter les mouvements
+                          en utilisant OpenCV et MediaPipe.
+                        </p>
+                        <video src="media/test3_opencv_mediapipe.mp4" controls class="w-100 rounded mb-2"></video>
+                        <p class="mb-1">
+                          <strong>Résultat :</strong> On est capable de bien
+                          voir mes mouvements quand je fais la danse de miner.
+                        </p>
+                        <p class="mb-0">
+                          <strong>Avis :</strong> OpenCV et MediaPipe
+                          fonctionnent très bien pour détecter les mouvements
+                          et les points suivent mes mouvements même quand je
+                          fais des mouvements bizarres.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <p class="mb-0">
+                          <strong>Avis final :</strong> Les deux technologies
+                          vont amplement faire l'affaire pour notre projet.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="montage" class="mb-5">
+      <h2>Montage</h2>
+      <div class="card rounded-4 bg-light">
+        <div class="card-body">
+          <div class="row g-3">
+            <div class="col-12">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">Liste des technos impliquées</h5>
+                  <ul>
+                    <li>CanaKit Raspberry Pi 4 Starter Kit</li>
+                    <li>Webcam eMeet C960</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Ordre et instructions pour le montage
+                  </h5>
+                  <ol>
+                    <li>Mettre le logiciel dans le raspberry-pi-4-starter-kit</li>
+                    <li>Mettre la caméra de façon à ce qu'elle apperçoit bien les mouvements</li>
+                    <li>Placer l'écran au dessus de la caméra</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">Photos du montage</h5>
+                  <div class="text-center">
+                    <h5 class="mb-4 fw-bold">Début du montage</h5>
+
+                    <div class="row g-4 justify-content-center">
+                      <div class="col-md-4">
+                        <img src="img/IMG_0246.jpg" class="img-fluid rounded shadow">
+                      </div>
+
+                      <div class="col-md-4">
+                        <img src="img/IMG_0247.jpg" class="img-fluid rounded shadow">
+                      </div>
+
+                      <div class="col-md-4">
+                        <img src="img/IMG_0249.jpg" class="img-fluid rounded shadow">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="logiciel" class="mb-3">
+      <h2>Logiciel</h2>
+      <div class="card rounded-4 bg-light">
+        <div class="card-body">
+          <div class="row g-3">
+            <div class="col-12">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">Stack technologique</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Justification du choix des technos
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Captures d'écran des étapes d'utilisation
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="container mb-3">
+    <div class="bg-dark text-white py-4 rounded-3 text-center">
+      <p class="mb-2 opacity-75">
+        Veille technologique - TP3 - Cégep Garneau
+      </p>
+      <span class="fs-6">Alexandre Roy - Félix Laliberté - Anthony Pageau - Léo Paquin - Adam
+        Auger</span>
+    </div>
+  </footer>
+</body>
+
 </html>
